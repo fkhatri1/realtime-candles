@@ -1,0 +1,40 @@
+(py39) [root@ip-10-0-2-94 realtime-candles]# ./main.py
+03:01:13 - INFO - Minute, Hour and Day candle series instantiated.
+03:01:13 - INFO - Websocket subscription established, now listening and updating local data.
+03:01:13 - INFO - Updates to candle data will be reported here as intervals turn.
+03:01:13 - INFO - Press Ctrl+C or Ctrl+Z to stop this process and dump candle data to csv.
+03:02:00 - INFO - New interval beginning for BTC-PERP at 60sec resolution. Last 5 candles with variances from FTX data:
+                              open     high      low    close        volume  open_var  high_var  low_var  close_var   volume_var
+2021-12-09 02:58:00+00:00  49940.0  49993.0  49940.0  49975.0  1.276769e+06       NaN       NaN      NaN        NaN          NaN
+2021-12-09 02:59:00+00:00  49975.0  49975.0  49941.0  49941.0  2.197220e+06       NaN       NaN      NaN        NaN          NaN
+2021-12-09 03:00:00+00:00  49941.0  49941.0  49872.0  49884.0  3.139120e+06       NaN       NaN      NaN        NaN          NaN
+2021-12-09 03:01:00+00:00  49884.0  49924.0  49879.0  49924.0  7.898177e+05       0.0       0.0      0.0        0.0 -1027053.878
+2021-12-09 03:02:00+00:00  49924.0  49924.0  49924.0  49924.0  1.000000e-03       NaN       NaN      NaN        NaN          NaN
+
+03:02:00 - INFO - Continuing to listen to Websocket. Press Ctrl+C or Ctrl+Z to stop this process and dump candle data to csv.
+
+03:03:00 - INFO - New interval beginning for BTC-PERP at 60sec resolution. Last 5 candles with variances from FTX data:
+                              open     high      low    close        volume  open_var  high_var  low_var  close_var    volume_var
+2021-12-09 02:59:00+00:00  49975.0  49975.0  49941.0  49941.0  2.197220e+06       NaN       NaN      NaN        NaN           NaN
+2021-12-09 03:00:00+00:00  49941.0  49941.0  49872.0  49884.0  3.139120e+06       NaN       NaN      NaN        NaN           NaN
+2021-12-09 03:01:00+00:00  49884.0  49924.0  49879.0  49924.0  7.898177e+05       0.0       0.0      0.0        0.0 -1.027054e+06
+2021-12-09 03:02:00+00:00  49924.0  49932.0  49916.0  49929.0  1.719340e+01       0.0       0.0      0.0       -1.0 -8.583774e+05
+2021-12-09 03:03:00+00:00  49929.0  49934.0  49934.0  49934.0  1.897000e-01       NaN       NaN      NaN        NaN           NaN
+
+03:03:00 - INFO - Continuing to listen to Websocket. Press Ctrl+C or Ctrl+Z to stop this process and dump candle data to csv.
+
+03:04:00 - INFO - New interval beginning for BTC-PERP at 60sec resolution. Last 5 candles with variances from FTX data:
+                              open     high      low    close        volume  open_var  high_var  low_var  close_var    volume_var
+2021-12-09 03:00:00+00:00  49941.0  49941.0  49872.0  49884.0  3.139120e+06       NaN       NaN      NaN        NaN           NaN
+2021-12-09 03:01:00+00:00  49884.0  49924.0  49879.0  49924.0  7.898177e+05       0.0       0.0      0.0        0.0 -1.027054e+06
+2021-12-09 03:02:00+00:00  49924.0  49932.0  49916.0  49929.0  1.719340e+01       0.0       0.0      0.0       -1.0 -8.583774e+05
+2021-12-09 03:03:00+00:00  49929.0  49966.0  49932.0  49962.0  8.975900e+00      -1.0      30.0      2.0       29.0 -1.071184e+04
+2021-12-09 03:04:00+00:00  49962.0  49962.0  49962.0  49962.0  1.000000e-03       NaN       NaN      NaN        NaN           NaN
+
+03:04:00 - INFO - Continuing to listen to Websocket. Press Ctrl+C or Ctrl+Z to stop this process and dump candle data to csv.
+
+^C03:06:27 - INFO - Received interrupt or terminate signal. Writing candle data to csv and shutting down.
+03:06:38 - INFO - Candle data written to 1639019190_BTC-PERP_60sec_candle_data.csv.
+03:06:45 - INFO - Candle data written to 1639019198_BTC-PERP_3600sec_candle_data.csv.
+03:07:00 - INFO - Candle data written to 1639019205_BTC-PERP_86400sec_candle_data.csv.
+03:07:00 - INFO - Goodbye.
