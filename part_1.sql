@@ -3,7 +3,7 @@
 -- Table for housing trade executions data
 CREATE TABLE trades (
     exchange CHAR(20),
-	pair CHAR(20),
+    pair CHAR(20),
     ts TIMESTAMP,
     price FLOAT,
     size FLOAT,
@@ -15,7 +15,7 @@ CREATE TABLE trades (
 -- Table for housing historical ohlc data
 CREATE TABLE ohlc (
     exchange CHAR(20),
-	pair CHAR(20),
+    pair CHAR(20),
     interval_start TIMESTAMP,
     interval_duration INT,
     o FLOAT,
