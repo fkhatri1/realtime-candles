@@ -4,9 +4,9 @@ SQL statements to create tables to house trade and OHLC historical data is conta
 
 # realtime-candles
 ## Running the code
-Run the code by running main.py from a terminal like `./main.py`, or with any Python interpreter like `python3 main.py`.
-Sample output is provided in `sample_output.txt`.
-Sample unit test output is provided in `sample_test_output.txt`.
+ - Run the code by running main.py from a terminal like `./main.py`, or with any Python interpreter like `python3 main.py`.
+ - Sample output is provided in `sample_output.txt` and csvs.
+ - Sample unit test output is provided in `sample_test_output.txt`.
 
 ### Dependencies
 This assumes your environment has these modules installed:
