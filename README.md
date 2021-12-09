@@ -26,7 +26,7 @@ The process will run forever, turning candle intervals and starting new ones, un
 CandleSeries contains candle data for a given market for a given candle window length. All data is maintained by the process in Pandas dataframes.
 This class provides functionality to update candle data with new trade information. It handles turning of candle intervals and compares local data with FTX historical data. It also fetches open interest at the turn of intervals.
 
-Note - Locally-calculated OHCL data matches closely with FTX historical data. Variances that do occur are mostly within 1%. Variances could be occurring because of missed messages from the Websocket. Locally-calculated volume is way off, however. I describe more on this in the Todos below. 
+**Note** - Locally-calculated OHCL data matches closely with FTX historical data. Variances that do occur are mostly within 1%. Variances could be occurring because of missed messages from the Websocket. Locally-calculated volume is way off, however. I describe more on this in the Todos below. 
 
 ### FTXClient
 This class provides wrappers for getting historical OHLC and open interest for any market from FTX.
