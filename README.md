@@ -18,12 +18,13 @@ Exit by sending signals SIGINT (Ctrl+C) or SIGTSTP (Ctrl+Z) while running. It wi
 
 ## Design notes
 Below are high-level notes describing the components of this solution. Details are in comments within the code.
+The process will run forever, turning candle intervals and starting new ones, until stopped. At the turn of intervals, local data is printed to the terminal showing variances with FTX and open interest.
 
 **Note** - The tables from Part 1 are not used by the realtime-candles solution. To avoid dependencies of standing up a database, realtime-candles runs everything in memory.
 
 ### CandleSeries
 CandleSeries contains candle data for a given market for a given candle window length. All data is maintained by the process in Pandas dataframes.
-This class provides functionality to update candle data with new trade information. It handles turning of candle windows and compares local data with FTX historical data. It also fetches open interest at the turn of intervals.
+This class provides functionality to update candle data with new trade information. It handles turning of candle intervals and compares local data with FTX historical data. It also fetches open interest at the turn of intervals.
 
 Note - Locally-calculated OHCL data matches closely with FTX historical data. Variances that do occur are mostly within 1%. Variances could be occurring because of missed messages from the Websocket. Locally-calculated volume is way off, however. I describe more on this in the Todos below. 
 
